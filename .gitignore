@@ -1,0 +1,6 @@
+# Generated
+node_modules
+app
+dist
+data
+.DS_Store

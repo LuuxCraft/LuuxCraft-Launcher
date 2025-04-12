@@ -1,0 +1,30 @@
+{
+  "name": "luuxcraft-launcher",
+  "productName": "LuuxCraft Launcher",
+  "description": "Custom Minecraft Launcher for LuuxCraft",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec npm start",
+    "build": "node build.js --obf=true --build=platform",
+    "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/luuxcraft-launcher/master/src/assets/images/icon.png"
+  },
+  "nodemonConfig": {
+    "ext": "js,html,css",
+    "ignore": "**/test"
+  },
+  "devDependencies": {
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12",
+    "javascript-obfuscator": "^4.1.1",
+    "jimp": "^1.6.0",
+    "node-fetch": "^3.3.2",
+    "png2icons": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuuxCraft/LuuxCraft-Launcher.git"
+  }
+}
